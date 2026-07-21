@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1rem;
+  color: #1f2933;
+  background: #f4f7fb;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#wrapper {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid #c7d2df;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(31, 41, 51, 0.12);
+}
+
+h1 {
+  margin-top: 0;
+  color: #173f6b;
+  font-size: 2rem;
+}
+
+.instructions {
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 1rem;
+  color: #172b4d;
+  background: #e8f2fc;
+  border-left: 5px solid #1769aa;
+}
+
+.required-key {
+  color: #9b1c1c;
+  font-weight: 700;
+}
+
+fieldset {
+  margin: 0 0 1.5rem;
+  padding: 1.25rem;
+  border: 2px solid #607d9b;
+  border-radius: 5px;
+}
+
+legend {
+  padding: 0 0.4rem;
+  color: #173f6b;
+  font-weight: 700;
+}
+
+#formcol1 ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Limit list and label formatting to the text-field section. */
+#formcol1 li {
+  margin: 0.75rem 0;
+  list-style: none;
+}
+
+#formcol1 label {
+  display: inline-block;
+  width: 8.5em;
+  margin-right: 0.5em;
+  text-align: right;
+  font-weight: 600;
+}
+
+input[type="text"] {
+  width: min(100%, 25rem);
+  padding: 0.55rem 0.65rem;
+  color: #1f2933;
+  background: #fff;
+  border: 2px solid #8193a6;
+  border-radius: 4px;
+  font: inherit;
+}
+
+/* Color is an extra required-field cue; the label also includes an asterisk. */
+#formcol1 input.reqfield {
+  background: #fff3a6;
+}
+
+.radio-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+}
+
+.radio-choice {
+  display: inline-flex;
+  align-items: center;
+}
+
+.radio-choice input {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0 0.4rem 0 0;
+}
+
+/* Override the text-field label width/alignment for radio-button labels. */
+#multchoice label {
+  display: inline;
+  width: auto;
+  margin: 0;
+  text-align: left;
+  font-weight: 600;
+}
+
+select:focus,
+select:active,
+input:focus,
+input:active,
+input:focus + label,
+input:active + label,
+label[for]:focus,
+label[for]:active {
+  color: #fff !important;
+  background-color: #155fa0 !important;
+}
+
+input:focus,
+button:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 3px;
+}
+
+button {
+  padding: 0.7rem 1.1rem;
+  color: #fff;
+  background: #155fa0;
+  border: 2px solid #0f4778;
+  border-radius: 5px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover,
+button:active {
+  background: #0f4778;
+}
+
+@media (max-width: 560px) {
+  #wrapper {
+    padding: 1.25rem;
+  }
+
+  #formcol1 label {
+    display: block;
+    width: auto;
+    margin: 0 0 0.25rem;
+    text-align: left;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+}
