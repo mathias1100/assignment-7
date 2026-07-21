@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive HTML Text and CSS Fundamentals</title>
+
+  <!-- Google Fonts: Hibur Mono and Atkinson Hyperlegible -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Hibur+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">ATLS-CSCI 3150</p>
+      <h1>HTML Text &amp; CSS Fundamentals</h1>
+      <p class="intro">A responsive layout using CSS Grid and Flexbox.</p>
+    </div>
+
+    <nav aria-label="Exercise navigation">
+      <ul class="nav-list">
+        <li><a href="#exercise-1">Exercise 1</a></li>
+        <li><a href="#exercise-2">Exercise 2</a></li>
+        <li><a href="#exercise-3">Exercise 3</a></li>
+        <li><a href="#findings">Findings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <div class="exercise-grid">
+      <article class="card" id="exercise-1">
+        <p class="card-label">Exercise 1</p>
+        <h2>Basic HTML Animals</h2>
+
+        <p>This is the first paragraph on the page. It introduces the animals included in this exercise.</p>
+
+        <h3>The Llama</h3>
+        <p>The llama is a South American relative of the camel. It is commonly used as a pack animal.</p>
+
+        <h3>The Anaconda</h3>
+        <p>The anaconda is a very large snake found in tropical South America.</p>
+      </article>
+
+      <article class="card" id="exercise-2">
+        <p class="card-label">Exercise 2</p>
+        <h2>Looking at Lists</h2>
+
+        <h3>Favorite vegetables</h3>
+        <ul>
+          <li>Cucumber</li>
+          <li>Broccoli</li>
+          <li>Asparagus</li>
+          <li>Pepper</li>
+        </ul>
+
+        <h3>How to make hummus</h3>
+        <ol>
+          <li>Remove the skin from the garlic and chop it.</li>
+          <li>Remove the seeds from the pepper and chop it.</li>
+          <li>Add all ingredients to a food processor.</li>
+          <li>Process everything into a paste.</li>
+        </ol>
+      </article>
+
+      <article class="card" id="exercise-3">
+        <p class="card-label">Exercise 3</p>
+        <h2>Emphasis and Importance</h2>
+
+        <p>
+          There are two things I care about:
+          <strong>music</strong> and <strong>friends</strong>.
+          Someday I might be able to get my friends interested in my music.
+        </p>
+
+        <p>
+          I was <em>really</em> excited when I finished this exercise because
+          semantic HTML adds meaning instead of only changing appearance.
+        </p>
+
+        <p class="note">
+          Strong text communicates importance, while emphasized text changes
+          the stress of a sentence.
+        </p>
+      </article>
+    </div>
+
+    <section class="findings" id="findings" aria-labelledby="findings-heading">
+      <h2 id="findings-heading">Responsive and Accessibility Findings</h2>
+      <p>
+        At a browser width above 900 pixels, the three exercise sections appear
+        in three columns. Below 900 pixels, the layout changes to two columns,
+        and below 640 pixels it changes to one column. The navigation also wraps
+        when space becomes limited. When I increased the text size to 200% and
+        400%, the cards became taller, but the text remained readable and no
+        horizontal scrolling was required.
+      </p>
+      <p>
+        I imported two Google Fonts: Hibur Mono for headings and Atkinson
+        Hyperlegible for the body text. I also added semantic page regions, a
+        skip link, visible keyboard focus, a logical heading order, and relative
+        sizing. The page can be reviewed with the Nu HTML Checker, the document
+        outline, WAVE, keyboard navigation, and a screen reader.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by Mathias Teferra for ATLS-CSCI 3150.</p>
+  </footer>
+</body>
+</html>
